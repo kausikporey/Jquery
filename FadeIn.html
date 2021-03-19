@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            JQuery Tutorial
+        </title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\USER\Desktop\JQuery\index.css">
+        <script src="JQuery.js"></script>
+    </head>
+    <body>
+        <div class="fade">
+            <div id="one" style="width:200px; height:100px;display:none;background-color:orange;"></div><br>
+            <div id="two" style="width:200px; height:100px;display:none;background-color:green;"></div><br>
+            <div id="three" style="width:200px; height:100px;display:none;background-color:black;"></div><br>
+        </div>
+        <button>Bye</button>
+       <script>
+       $(document).ready(function(){
+           $("button").click(function(){
+               $("#one").fadeIn();
+               $("#two").fadeIn("fast");
+               $("#three").fadeIn("slow");
+           });
+       });
+       </script>
+    </body>
+</html>

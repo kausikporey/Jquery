@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            JQuery Tutorial
+        </title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\USER\Desktop\JQuery\index.css">
+        <script src="JQuery.js"></script>
+    </head>
+    <body>
+       <button id="su">SlideUp</button>
+       <button id="sd">SlideDown</button>
+       <div id="div1" style="width:200px;height:50px;background-color:pink;"></div>
+       <script>
+           $(document).ready(function(){
+               $("#su").on("click",function(){
+                   $("#div1").slideUp("slow");
+               });
+           });
+           $(document).ready(function(){
+               $("#sd").on("click",function(){
+                   $("#div1").slideDown("slow")
+               })
+           })
+       </script>
+    </body>
+</html>

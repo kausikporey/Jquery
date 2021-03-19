@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            JQuery Tutorial
+        </title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\USER\Desktop\JQuery\index.css">
+        <script src="JQuery.js"></script>
+    </head>
+    <body>
+        <div class="pic">
+            <img src="C:\Users\USER\Desktop\JQuery\Images\Flower.png">
+            <img src="C:\Users\USER\Desktop\JQuery\Images\kousik.jpg">
+            <img src="C:\Users\USER\Desktop\JQuery\Images\kp.png">
+        </div>
+        <Script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                     $("img").addClass("styleclass");
+                });
+            });
+        </Script>
+        <style>
+            .styleclass{
+                border:5px solid green;
+            }
+        </style>
+        <button>AddClass</button>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            JQuery Tutorial
+        </title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\USER\Desktop\JQuery\index.css">
+        <script src="JQuery.js"></script>
+    </head>
+    <body>
+        <div class="pic">
+            <img id="one" src="C:\Users\USER\Desktop\JQuery\Images\Flower.png">
+            <img id="two" src="C:\Users\USER\Desktop\JQuery\Images\kousik.jpg">
+            <img id="three" src="C:\Users\USER\Desktop\JQuery\Images\kp.png">
+        </div>
+        <button>Bye</button>
+       <script>
+       $(document).ready(function(){
+           $("button").click(function(){
+               $("#one").fadeOut("slow");
+               $("#two").fadeOut("fast");
+               $("#three").fadeOut("slow");
+           });
+       });
+       </script>
+    </body>
+</html>

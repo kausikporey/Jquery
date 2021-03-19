@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JQuery Tutorial
+        </title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\USER\Desktop\JQuery\index.css">
+        <script src="JQuery.js"></script>
+    </head>
+    <body>
+        <h1>JQuery Tutorial</h1>
+        <p>By Kausik</p>
+        <ul>
+            <li>Google</li>
+            <li>YouTube</li>
+            <li>Facebook</li>
+        </ul>
+       <script>
+           $(document).ready(function() {
+           $("button").click(function() {
+               alert("value : " +$("#st").val());
+           });
+        });
+       </script>
+       <input type="text" id="st" value="">
+       <button>submit</button>
+    </body>
+</html>

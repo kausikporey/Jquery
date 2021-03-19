@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            JQuery Tutorial
+        </title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\USER\Desktop\JQuery\index.css">
+        <script src="JQuery.js"></script>
+    </head>
+    <body>
+        <p>Start Typing</p>
+        <input id="press" type="text" size="10">
+        <Script>
+            $(document).ready(function(){
+                $("input").on("keypress",function(){
+                     $("p").hide();
+                });
+            });
+        </Script>
+    </body>
+</html>

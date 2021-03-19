@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            JQuery Tutorial
+        </title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\USER\Desktop\JQuery\index.css">
+        <script src="JQuery.js"></script>
+    </head>
+    <body>
+       <button  class="button" id="hide">Hide</button>
+       <button class="button" id="show">Show</button>
+       <img src="C:\Users\USER\Desktop\JQuery\Images\Flower.png">
+       <script>
+       $(document).ready(function(){
+           $("#hide").click(function(){
+               $("img").hide();
+           });
+       });
+       $(document).ready(function(){
+           $("#show").click(function(){
+               $("img").show();
+           });
+       });
+    </script>
+ </body>
+</html>

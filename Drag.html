@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            JQuery Tutorial
+        </title>
+        <script src="JQuery.js"></script>
+    </head>
+    <body>
+        <img src="C:\Users\USER\Desktop\JQuery\Images\Flower.png" height=100px width=200px>
+        <style>
+            #drag{
+                background-color:hotpink;
+                color:black;
+                width:500px;
+                height:300px;
+                float:right;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+                $("img").draggable();
+                $("#drag").droppable();
+            });
+        </script>
+        <div id="drag">
+        </div>
+    </body>
+</html>
